@@ -10,7 +10,7 @@
 
   <title>Dark/Light Demo</title>
 </head>
-<body>
+<body id="body" class="dark-mode">
   <header>
     <h1>Dark/Light Demo</h1>
     <nav>
@@ -19,6 +19,14 @@
         <li><a href="#!">Blog</a></li>
         <li><a href="#!">About</a></li>
         <li><a href="#!">Contact</a></li>
+    <!-- dark/light toggle btn -->
+        <li>
+          <label class="switch">
+            <input type="checkbox" name="switch" onclick="toggleDarkLight()">
+            <span class="slider round"></span>
+          </label>
+        </li>
+    <!-- end dark/light toggle btn -->
       </ul>
     </nav>
   </header>
@@ -63,7 +71,7 @@
 
     <div class="how">
       <h2>How?</h2>
-      <p>How I implimented Dark Mode in this demo.</p>
+      <p>How I implemented Dark Mode in this demo.</p>
     </div>
 
     <div class="links">
@@ -71,5 +79,12 @@
       <p>Links to more info on Dark Mode.</p>
     </div>
   </footer>
+
+  <script>
+  function toggleDarkLight(){
+    var body = document.getElementById("body");
+    body.classList.toggle("dark-mode");
+  }
+  </script>
 </body>
 </html>
