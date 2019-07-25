@@ -26,7 +26,7 @@ html, body{
 h1,h2,h3{
   font-family: 'IBM Plex Mono', monospace;
 }
-a{
+a,code{
   text-decoration: none;
   color: #d5a001;
 }
@@ -131,4 +131,10 @@ footer div{
   width: 300px;
   padding: 1rem;
   margin: 1rem;
+}
+.why,.how,.links{
+  text-indent: 1.5rem;
+}
+.how code{
+  font-family: 'IBM Plex Mono', monospace;
 }
